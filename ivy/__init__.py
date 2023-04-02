@@ -715,6 +715,8 @@ from . import functional
 from .functional import *
 from . import stateful
 from .stateful import *
+from . import gradslam
+from .gradslam import *
 from ivy.utils.inspection import fn_array_spec, add_array_specs
 
 add_array_specs()
