@@ -950,3 +950,6 @@ class Tensor:
     @with_unsupported_dtypes({"1.11.0 and below": ("float16",)}, "torch")
     def sign(self):
         return torch_frontend.sign(self._ivy_array)
+
+    def bitwise_right_shift(self, other, *, out=None):
+        return torch_frontend.bitwise_right_shift(self._ivy_array, other)
